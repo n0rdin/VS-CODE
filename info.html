@@ -1,57 +1,53 @@
 <!DOCTYPE html>
 <html lang="sv">
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Viktor Nordin</title>
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Russo+One&family=Saira+Condensed&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Russo+One&family=Saira+Condensed&display=swap"
+      rel="stylesheet"
+    />
 
-
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <div class="banderoll-content">
-        <img src="ViktorPoserar.jpeg" alt="Viktor Poserar">
-        <h1 style="color:khaki";>Enkät</h1>
-        <img src="ViktorPoserar.jpeg" alt="Viktor Poserar">
+      <nav>
+        <a style="font-size: 65px">Viktor Nordin</a><br />
+        <a>Interaktionsdesign & Kravhantering</a>
+      </nav>
+      <nav class="kontaktruta">
+        <a href="https://sv.wikipedia.org/wiki/Viktor_Nordin" target="_blank"
+          >Om mig |</a
+        >
+        <a href="kontakt.html"> Kontakt</a>
+      </nav>
     </div>
-    
-        <header>
-            <div class="header-content"> 
-                <a href="index.html">Startsida</a>
-                <a href="info.html">Enkät</a>
-                <a href="länkar.html">Sociala medier</a>
-                <a href="bilder.html">Bilder</a>
-                <a href="kontakt.html">Kontakt</a>
-            </div>
 
+    <header>
+      <div class="header-content">
+        <a href="index.html">Startsida</a>
+        <a href="info.html"><u>Enkät</u></a>
+        <a href="länkar.html">Sociala medier</a>
+        <a href="bilder.html">Bilder</a>
+        <a href="kontakt.html">Kontakt</a>
+      </div>
+    </header>
+    <body>
+      <p id="nisse" style="padding: 15px"></p>
 
-
-
-        </header>
-        <body>
-                <p id="nisse"></p>
-            
-                <script>
-            let alder = prompt("Hur gammal är du?");
-            if(alder < 13)
-            {
-            document.getElementById("nisse").innerHTML = ("Du är ett barn!")
-            }
-            
-            else if(alder >=13 && alder < 20)
-            {
-            document.getElementById("nisse").innerHTML = ("Du är en tonåring!")
-            }
-            else if(alder >=20)
-            {
-            document.getElementById("nisse").innerHTML = ("Du är vuxen!")
-            }
-                </script>
-            </body>
-
-    
-    
-
+      <script>
+        let alder = prompt("Hur gammal är du?");
+        if (alder < 13) {
+          document.getElementById("nisse").innerHTML = "Du är ett barn!";
+        } else if (alder >= 13 && alder < 20) {
+          document.getElementById("nisse").innerHTML = "Du är en tonåring!";
+        } else if (alder >= 20) {
+          document.getElementById("nisse").innerHTML = "Du är vuxen!";
+        }
+      </script>
     </body>
+  </body>
+</html>

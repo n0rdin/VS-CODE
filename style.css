@@ -49,11 +49,12 @@ script {
 }
 
 
-.image {
+.images {
     display: flex;
     justify-content: space-evenly;
     flex-direction:row;
-    margin: 10px;
+    height: auto;
+    width: 100%;
    
     
 }
@@ -127,11 +128,14 @@ a {
 
     }
 
-    .image {
+    .images {
         display: flex;
         justify-content: space-evenly;
-        margin: 10px;
+        align-items: center;
         flex-wrap: wrap;
+        height: auto;
+        width: 100%;
+
     }
 
     .links {

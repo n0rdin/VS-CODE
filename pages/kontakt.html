@@ -10,7 +10,7 @@
       rel="stylesheet"
     />
 
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="../css/style.css"></link>
   </head>
   <body>
     <div class="banderoll-content">
@@ -28,26 +28,19 @@
 
     <header>
       <div class="header-content">
-        <a href="index.html">Startsida</a>
-        <a href="info.html"><u>Enkät</u></a>
+        <a href="../index.html">Startsida</a>
+        <a href="info.html">Enkät</a>
         <a href="länkar.html">Sociala medier</a>
         <a href="bilder.html">Bilder</a>
-        <a href="kontakt.html">Kontakt</a>
+        <a href="kontakt.html"><u>Kontakt</u></a>
       </div>
     </header>
-    <body>
-      <p id="nisse" style="padding: 15px"></p>
 
-      <script>
-        let alder = prompt("Hur gammal är du?");
-        if (alder < 13) {
-          document.getElementById("nisse").innerHTML = "Du är ett barn!";
-        } else if (alder >= 13 && alder < 20) {
-          document.getElementById("nisse").innerHTML = "Du är en tonåring!";
-        } else if (alder >= 20) {
-          document.getElementById("nisse").innerHTML = "Du är vuxen!";
-        }
-      </script>
-    </body>
+    <div class="information">
+      Telefon - 076-2288713
+      <br />
+      Mail - nordinviktor@hotmail.com
+      <br />
+    </div>
   </body>
 </html>

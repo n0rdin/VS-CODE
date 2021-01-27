@@ -10,7 +10,7 @@
       rel="stylesheet"
     />
 
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="../css/style.css"></link>
   </head>
   <body>
     <div class="banderoll-content">
@@ -27,33 +27,27 @@
     </div>
 
     <header>
-      <div class="header-content">
-        <a href="index.html">Startsida</a>
-        <a href="info.html">Enkät</a>
-        <a href="länkar.html"><u>Sociala medier</u></a>
+      <div class="header-content"> 
+        <a href="../index.html">Startsida</a>
+        <a href="info.html"><u>Enkät</u></a>
+        <a href="länkar.html">Sociala medier</a>
         <a href="bilder.html">Bilder</a>
         <a href="kontakt.html">Kontakt</a>
-      </div>
-    </header>
-
-    <div class="links">
-      <h3>
-        <a href="https://facebook.com/virrenorre" target="_blank">Facebook</a>
-      </h3>
-      <h3>
-        <a href="https://twitter.com/viktornordin" target="_blank">Twitter</a>
-      </h3>
-      <h3>
-        <a href="https://instagram.com/viktornordin/" target="_blank">Instagram
-        </a>
-      </h3>
-      <h3>
-        <a
-          href="https://www.linkedin.com/in/viktor-nordin-1954a6187/"
-          target="_blank"
-          >LinkedIn</a
-        >
-      </h3>
     </div>
+    </header>
+    <body>
+      <p id="nisse" style="padding: 15px"></p>
+
+      <script>
+        let alder = prompt("Hur gammal är du?");
+        if (alder < 13) {
+          document.getElementById("nisse").innerHTML = "Du är ett barn!";
+        } else if (alder >= 13 && alder < 20) {
+          document.getElementById("nisse").innerHTML = "Du är en tonåring!";
+        } else if (alder >= 20) {
+          document.getElementById("nisse").innerHTML = "Du är vuxen!";
+        }
+      </script>
+    </body>
   </body>
 </html>
